@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virginia Adami · Centro de Estética · Depilación láser y cuidado de la piel</title>
+  <meta name="description" content="Depilación láser Cristal 3D Plus y cuidado de la piel. 20 años de trayectoria con atención personalizada. Dr. Baraja 227. Reservá tu turno.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#8E5A63">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=1">
+</head>
+<body>
+  <a class="skip" href="#turnos">Saltar a reservar turno</a>
+
+  <header class="header" id="top">
+    <div class="wrap header__in">
+      <a class="brand" href="#top" aria-label="Virginia Adami, inicio">
+        <img src="img/mark-va.png" alt="" width="52" height="41">
+        <span><b>Virginia Adami</b><small>Centro de estética</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#laser">Depilación láser</a>
+        <a href="#precios">Precios</a>
+        <a href="#piel">Cuidado de la piel</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn--primary btn--sm header__cta" href="#turnos">Reservar turno</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- PORTADA -->
+    <section class="hero">
+      <div class="wrap hero__in">
+        <div class="hero__txt">
+          <p class="eyebrow">Dermatocosmiatra · Depilación láser</p>
+          <h1>Tu piel, suave y cuidada <em>por mucho tiempo</em></h1>
+          <p class="lead">Tratamientos progresivos y perdurables. 20 años cuidando la salud y la estética de tu piel, con atención personalizada.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#turnos">Reservar turno</a>
+            <a class="btn btn--ghost" href="#precios">Ver precios</a>
+          </div>
+          <ul class="hero__facts">
+            <li><b>20</b><span>años de<br>trayectoria</span></li>
+            <li><b>35%</b><span>de descuento<br>combinando zonas</span></li>
+            <li><b>10%</b><span>extra pagando<br>en efectivo</span></li>
+          </ul>
+        </div>
+        <div class="hero__media">
+          <div class="arch"><img src="img/hero.jpg" alt="Sesión de depilación láser en pierna" width="733" height="1100"></div>
+          <div class="hero__badge">
+            <small>Tecnología</small>
+            <b>Cristal 3D Plus</b>
+            <span>Body Health</span>
+          </div>
+          <p class="hero__script">piel de seda</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRANJA -->
+    <div class="strip">
+      <div class="wrap strip__in">
+        <span>Depilación láser</span><i></i>
+        <span>Cristal Skin</span><i></i>
+        <span>Asesoramiento skin care</span><i></i>
+        <span>Siluma Cosmética Profesional</span>
+      </div>
+    </div>
+
+    <!-- LÁSER -->
+    <section class="section" id="laser">
+      <div class="wrap split">
+        <div class="split__media">
+          <img class="split__a" src="img/laser-cuerpo.jpg" alt="Profesional realizando depilación láser" loading="lazy" width="1100" height="733">
+          <img class="split__b" src="img/laser-rostro.jpg" alt="Depilación láser en rostro" loading="lazy" width="1100" height="733">
+        </div>
+        <div class="split__txt">
+          <p class="eyebrow">Depilación láser</p>
+          <h2>Chau cera, chau maquinita</h2>
+          <p>Trabajamos con el equipo <b>Cristal 3D Plus de Body Health</b>. Cada sesión debilita el vello de a poco, hasta que deja de crecer en la zona tratada.</p>
+          <ol class="steps">
+            <li><b>Consulta y evaluación</b><span>Vemos tu tipo de piel y de vello, y armamos tu plan de sesiones.</span></li>
+            <li><b>Sesiones rápidas</b><span>Según la zona, de 10 a 40 minutos. Volvés a tu día sin problema.</span></li>
+            <li><b>Resultados que duran</b><span>Con cada sesión ves menos vello, más fino y más claro.</span></li>
+          </ol>
+          <a class="link-arrow" href="#precios">Calculá el precio de tus zonas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section class="section section--blush" id="precios">
+      <div class="wrap">
+        <div class="head">
+          <p class="eyebrow">Lista de precios</p>
+          <h2>Elegí tus zonas y mirá cuánto ahorrás</h2>
+          <p>Tocá las zonas que te interesan: el descuento por combinar zonas se calcula solo.</p>
+        </div>
+        <div class="pricing">
+          <div class="zones" id="zones"></div>
+          <aside class="calc" id="calc" aria-live="polite">
+            <h3>Tu sesión</h3>
+            <ul class="calc__list" id="calcList"></ul>
+            <div class="calc__rows">
+              <div><span>Subtotal</span><b id="cSub">$0</b></div>
+              <div class="calc__disc" id="cDiscRow" hidden><span id="cDiscLbl">Descuento</span><b id="cDisc"></b></div>
+              <label class="cash"><input type="checkbox" id="cash"><span class="cash__box"></span>Pago en efectivo <em>(10% off)</em></label>
+              <div class="calc__disc" id="cCashRow" hidden><span>Efectivo</span><b id="cCash"></b></div>
+            </div>
+            <div class="calc__total"><span>Total por sesión</span><b id="cTotal">$0</b></div>
+            <p class="calc__hint" id="cHint">Elegí 2 zonas o más y tenés descuento.</p>
+            <button class="btn btn--primary btn--block" id="toBook" disabled>Reservar con estas zonas</button>
+          </aside>
+        </div>
+        <div class="tiers">
+          <div><b>2 zonas</b><span>10%</span></div>
+          <div><b>3 zonas</b><span>20%</span></div>
+          <div><b>4 zonas</b><span>30%</span></div>
+          <div><b>5 o más</b><span>35%</span></div>
+          <div class="tiers__pay"><b>Todos los medios de pago</b><span>10% off en efectivo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIEL -->
+    <section class="section" id="piel">
+      <div class="wrap">
+        <div class="head">
+          <p class="eyebrow">Cuidado de la piel</p>
+          <h2>Más que depilación</h2>
+          <p>Como dermatocosmiatra, te acompaño a entender tu piel y a cuidarla todos los días.</p>
+        </div>
+        <div class="cards">
+          <article class="card card--new">
+            <div class="card__img"><img src="img/cristal-skin.jpg" alt="Tratamiento rejuvenecedor facial con láser" loading="lazy" width="733" height="1100"><span class="tag">Nuevo</span></div>
+            <div class="card__body">
+              <h3>Cristal Skin</h3>
+              <p>Tratamiento rejuvenecedor con láser. Mejora la textura, el tono y la luminosidad de la piel.</p>
+              <div class="card__foot"><b>$45.000</b><a class="link-arrow" href="#turnos" data-service="Cristal Skin (rejuvenecedor)">Reservar</a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img"><img src="img/facial.jpg" alt="Tratamiento facial con máscara" loading="lazy" width="825" height="1100"></div>
+            <div class="card__body">
+              <h3>Asesoramiento skin care</h3>
+              <p>Analizamos tu piel y armamos una rutina a tu medida: qué usar, cuándo y en qué orden.</p>
+              <div class="card__foot"><b>Consultar</b><a class="link-arrow" href="#turnos" data-service="Asesoramiento skin care">Reservar</a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img"><img src="img/skincare.jpg" alt="Productos de cuidado facial" loading="lazy" width="734" height="1100"></div>
+            <div class="card__body">
+              <h3>Siluma Cosmética Profesional</h3>
+              <p>Productos profesionales para seguir el cuidado en casa. Te recomiendo los que van con tu piel.</p>
+              <div class="card__foot"><b>Consultar</b><a class="link-arrow js-wa" data-msg="Hola Virginia, quería consultar por los productos Siluma.">Consultar</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TURNOS -->
+    <section class="section section--deep" id="turnos">
+      <div class="wrap book">
+        <div class="book__txt">
+          <p class="eyebrow eyebrow--light">Turnos</p>
+          <h2>Reservá tu turno en un minuto</h2>
+          <p>Elegí qué te querés hacer, el día y el horario. Te llega la confirmación por WhatsApp.</p>
+          <ul class="hours" id="hoursList"></ul>
+          <p class="book__note">Los sábados se atiende con cita previa.</p>
+        </div>
+        <form class="book__card" id="bookForm" novalidate>
+          <div class="step">
+            <p class="step__title"><span>1</span>¿Qué te querés hacer?</p>
+            <div class="seg" id="serviceSeg"></div>
+            <p class="zones-picked" id="zonesPicked" hidden></p>
+          </div>
+          <div class="step">
+            <p class="step__title"><span>2</span>Elegí el día</p>
+            <div class="days" id="days" role="radiogroup" aria-label="Día del turno"></div>
+          </div>
+          <div class="step">
+            <p class="step__title"><span>3</span>Elegí el horario</p>
+            <div class="slots" id="slots" role="radiogroup" aria-label="Horario del turno"><p class="muted">Primero elegí un día.</p></div>
+          </div>
+          <div class="step">
+            <p class="step__title"><span>4</span>Tus datos</p>
+            <div class="row2">
+              <label class="field"><span>Nombre</span><input id="bName" autocomplete="name" placeholder="Tu nombre" required></label>
+              <label class="field"><span>¿Es tu primera vez?</span>
+                <select id="bFirst"><option>Sí, es mi primera sesión</option><option>No, ya vine antes</option></select>
+              </label>
+            </div>
+          </div>
+          <p class="form-error" id="bError" role="alert" hidden></p>
+          <button class="btn btn--primary btn--block btn--lg" type="submit">Pedir turno por WhatsApp</button>
+          <p class="book__small">Demo: el pedido se envía por WhatsApp para confirmar.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre">
+      <div class="wrap about">
+        <div class="about__media">
+          <img src="img/cabina.jpg" alt="Gabinete de estética" loading="lazy" width="1100" height="733">
+          <img class="about__logo" src="img/logo-va.png" alt="Virginia Adami, Centro de Estética" width="691" height="474" loading="lazy">
+        </div>
+        <div class="about__txt">
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Hola, soy Virginia</h2>
+          <p>Soy dermatocosmiatra y hace 20 años que acompaño a mis pacientes a cuidar su piel. Creo en los tratamientos progresivos, hechos con tiempo y explicados con claridad, para que veas resultados que duran.</p>
+          <p>En cada consulta te escucho, evalúo tu piel y te propongo solo lo que de verdad necesitás.</p>
+          <p class="signature">Virginia Adami</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section class="section section--blush" id="resenas">
+      <div class="wrap">
+        <div class="head">
+          <p class="eyebrow">Lo que dicen mis pacientes</p>
+          <h2>Reseñas</h2>
+        </div>
+        <div class="reviews" id="reviews"></div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS -->
+    <section class="section" id="preguntas">
+      <div class="wrap faq">
+        <div class="head head--left">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Antes de tu primera sesión</h2>
+          <p>¿Te quedó alguna duda? <a class="js-wa" data-msg="Hola Virginia, tengo una consulta sobre la depilación láser.">Escribime por WhatsApp</a>.</p>
+        </div>
+        <div class="faq__list" id="faq"></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section section--blush" id="contacto">
+      <div class="wrap contact">
+        <div class="contact__card">
+          <h2 class="script">Horarios</h2>
+          <ul class="hours hours--dark" id="hoursList2"></ul>
+          <p class="muted">Sábados con cita previa.</p>
+        </div>
+        <div class="contact__txt">
+          <p class="eyebrow">Visitame</p>
+          <h2>Te espero en el gabinete</h2>
+          <ul class="info">
+            <li><span class="ico" data-i="pin"></span><div><b>Dirección</b>Dr. Baraja 227</div></li>
+            <li><span class="ico" data-i="wa"></span><div><b>WhatsApp</b>2920 52-3672</div></li>
+            <li><span class="ico" data-i="ig"></span><div><b>Instagram</b><a href="https://www.instagram.com/estetica_v.a/" target="_blank" rel="noopener">@estetica_v.a</a></div></li>
+          </ul>
+          <div class="hero__cta">
+            <a class="btn btn--primary" id="mapBtn" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn btn--ghost js-wa" data-msg="Hola Virginia, quería hacerte una consulta.">Escribime</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <img src="img/logo-va-blanco.png" alt="Virginia Adami, Centro de Estética" width="180" height="123" loading="lazy">
+      <nav aria-label="Pie de página">
+        <a href="#laser">Depilación láser</a><a href="#precios">Precios</a><a href="#piel">Cuidado de la piel</a><a href="#turnos">Turnos</a>
+      </nav>
+    </div>
+    <div class="wrap footer__legal">
+      <span>Demo de diseño: fotos y reseñas de ejemplo.</span>
+      <span>Hecho por <a href="https://mirkosistemas.com" target="_blank" rel="noopener">Mirko Sistemas</a></span>
+    </div>
+  </footer>
+
+  <a class="wa-float js-wa" data-msg="Hola Virginia, quería hacerte una consulta." aria-label="Escribime por WhatsApp"></a>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js?v=1"></script>
+</body>
+</html>
